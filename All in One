@@ -14917,6 +14917,8 @@
 
 
 
+
+
 if game.PlaceId == 7560156054 then
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -15182,7 +15184,7 @@ Callback = function()
 
 elseif game.PlaceId == 4924922222 then
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Brookhaven 🏡RP", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "PetSimulatorXConfig"})
+	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Brookhaven 🏡RP", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "Brookhaven 🏡RPConfig"})
 	local home = Window:MakeTab({
 	Name = "Home",
 	Icon = "rbxassetid://9405923687",
@@ -15270,7 +15272,7 @@ elseif game.PlaceId == 4924922222 then
 	--Arsenal
 elseif game.PlaceId == 286090429 then
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Arsenal", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "PetSimulatorXConfig"})
+	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Arsenal", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "ArsenalConfig"})
 	local home = Window:MakeTab({
 	Name = "Home",
 	Icon = "rbxassetid://9405923687",
@@ -15351,7 +15353,7 @@ elseif game.PlaceId == 286090429 then
 --Mining Simulator 2
 elseif game.PlaceId == 9551640993 then
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Mining Simulator 2", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "PetSimulatorXConfig"})
+	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Mining Simulator 2", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "Mining Simulator 2Config"})
 	local home = Window:MakeTab({
 	Name = "Home",
 	Icon = "rbxassetid://9405923687",
@@ -15433,7 +15435,7 @@ elseif game.PlaceId == 9551640993 then
 --Goal kick simulator
 elseif game.PlaceId == 9281034297 then
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Goal Kick Simulator", HideStandard = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "PetSimulatorXConfig"})
+	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Goal Kick Simulator", HideStandard = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "Goal Kick SimulatorConfig"})
 	local home = Window:MakeTab({
 	Name = "Home",
 	Icon = "rbxassetid://9405923687",
@@ -15480,6 +15482,65 @@ elseif game.PlaceId == 9281034297 then
 	Name = "Green Hub",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/Scripts/main/GoalKickSimulator"))()
+	  end
+	})
+	
+	local settings = Window:MakeTab({
+	Name = "Setting",
+	Icon = "rbxassetid://9753762469",
+	PremiumOnly = false
+	})
+	local settingsSection = settings:AddSection({
+	Name = "Settings Area"
+	})
+	settings:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+	
+	end
+	})
+	settings:AddButton({
+	Name = "FPS Boost",
+	Callback = function()
+			  print("No script")
+	  end
+	})
+
+
+--Royale High
+elseif game.PlaceId == 735030788 then
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Royale🏰High", HideStandard = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "Royale🏰HighConfig"})
+	local home = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://9405923687",
+	PremiumOnly = false
+	})
+	local homeSection = home:AddSection({
+	Name = "Home Area"
+	})
+	home:AddLabel("Join Our Community Copy invite below")
+	home:AddButton({
+	Name = "Copy Invite!",
+	Callback = function()
+		setclipboard(tostring('https://discord.gg/USvbWS2E2A'))
+	  end
+	})
+	
+	local script = Window:MakeTab({
+	Name = "Script's",
+	Icon = "rbxassetid://9405930424",
+	PremiumOnly = false
+	})
+	local scriptSection = script:AddSection({
+	Name = "Script's Area"
+	})
+	script:AddButton({
+	Name = "Royale High Inf Gems Farm",
+	Callback = function()
+		wait(6)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/Royale%20high%20inf%20gems%20updated%20x2.lua', true))()
 	  end
 	})
 	
